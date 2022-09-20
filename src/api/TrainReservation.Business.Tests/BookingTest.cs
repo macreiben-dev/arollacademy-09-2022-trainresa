@@ -1,12 +1,22 @@
 using NFluent;
 using NSubstitute;
-using TrainReservation.Business;
 
 
-namespace TrainReservation.Business;
+namespace TrainReservation.Business.Tests;
 
 public class BookingTest
 {
+    private string trainName;
+    private string bookingReference;
+    private ITrainRepository trainRepo;
+
+    public BookingTest()
+    {
+        trainName = "Express2000";
+        bookingReference = "someBookingReference";
+        trainRepo = Substitute.For<ITrainRepository>();
+    }
+
     private static Booking GetTarget(
         int seatCountRequested,
         string trainName,
@@ -21,10 +31,25 @@ public class BookingTest
     {
         // ARRANGE
         var seatCountRequested = 1;
-        var trainName = "Express2000";
-        var bookingReference = "someBookingReference";
-        var trainRepo = Substitute.For<ITrainRepository>();
         trainRepo.Get(trainName).Returns(new[] { "1A" });
+        Booking target = GetTarget(seatCountRequested, trainName, bookingReference, trainRepo);
+
+        // ACT
+        IEnumerable<string> actual = target.BookedSeats();
+
+        // ASSERT
+        Check.That(actual).HasSize(1);
+        Check.That(actual.Single()).IsEqualTo("1A");
+    }
+
+    [Fact]
+
+    public void Should_return_seat_when_two_seats_available()
+    {
+        // ARRANGE
+        var seatCountRequested = 1;
+  
+        trainRepo.Get(trainName).Returns(new[] { "1A","2A" });
         Booking target = GetTarget(seatCountRequested, trainName, bookingReference, trainRepo);
 
         // ACT

@@ -17,7 +17,7 @@
 
         public IEnumerable<string> BookedSeats()
         {
-            return trainRepo.Get(trainName);
+            return new[] { trainRepo.Get(trainName).First() };
         }
 
 

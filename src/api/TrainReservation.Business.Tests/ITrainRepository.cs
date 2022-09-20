@@ -2,5 +2,6 @@
 {
     public interface ITrainRepository
     {
+        IEnumerable<string> Get(string trainName);
     }
 }

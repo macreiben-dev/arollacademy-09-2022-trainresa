@@ -11,7 +11,7 @@ public class BookingTest
         string bookingReference,
         ITrainRepository trainRepo
     ) {
-        return new Booking(seatCountRequested, trainName, bookingReference);
+        return new Booking(seatCountRequested, trainName, bookingReference, trainRepo);
     }
 
     [Fact]
@@ -22,6 +22,7 @@ public class BookingTest
         var trainName = "Express2000";
         var bookingReference = "someBookingReference";
         var trainRepo = Substitute.For<ITrainRepository>();
+        trainRepo.Get(trainName).Returns(new[] { "1A" });
         Booking target = GetTarget(seatCountRequested, trainName, bookingReference, trainRepo);
 
         // ACT

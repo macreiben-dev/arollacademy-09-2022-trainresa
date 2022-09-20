@@ -1,9 +1,9 @@
-﻿Feature: Feature1
+﻿Feature: BookSiteOnOneTrain
 
-A short summary of the feature
+As a user I book seat on a train.
 
 @tag1
-Scenario: Toto
+Scenario: Reserve one seat in one train with one coach with two places.
 Given 1 train 
 And coach A
 | Seats     |

@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.DapperSamples"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.DapperSamples.Acceptance.Tests", "Repositories.DapperSamples.Acceptance.Tests\Repositories.DapperSamples.Acceptance.Tests.csproj", "{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainReservation.Business", "TrainReservation.Business\TrainReservation.Business.csproj", "{460F93B3-E586-466B-82C5-8A0206508D1C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainReservation.Business.Specs", "TrainReservation.Business.Specs\TrainReservation.Business.Specs.csproj", "{D0C1E334-D63A-4276-A2C4-B5E9D0F8366D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainReservation.Business.Specs", "TrainReservation.Business.Specs\TrainReservation.Business.Specs.csproj", "{D0C1E334-D63A-4276-A2C4-B5E9D0F8366D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +39,6 @@ Global
 		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{460F93B3-E586-466B-82C5-8A0206508D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{460F93B3-E586-466B-82C5-8A0206508D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{460F93B3-E586-466B-82C5-8A0206508D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{460F93B3-E586-466B-82C5-8A0206508D1C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0C1E334-D63A-4276-A2C4-B5E9D0F8366D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0C1E334-D63A-4276-A2C4-B5E9D0F8366D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0C1E334-D63A-4276-A2C4-B5E9D0F8366D}.Release|Any CPU.ActiveCfg = Release|Any CPU

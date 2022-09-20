@@ -1,11 +1,16 @@
 using NFluent;
+using NSubstitute;
 
 namespace TrainReservation.Business;
 
 public class BookingTest
 {
-    private static Booking GetTarget(int seatCountRequested, string trainName, string bookingReference)
-    {
+    private static Booking GetTarget(
+        int seatCountRequested,
+        string trainName,
+        string bookingReference,
+        ITrainRepository trainRepo
+    ) {
         return new Booking(seatCountRequested, trainName, bookingReference);
     }
 
@@ -16,8 +21,9 @@ public class BookingTest
         var seatCountRequested = 1;
         var trainName = "Express2000";
         var bookingReference = "someBookingReference";
-        Booking target = GetTarget(seatCountRequested, trainName, bookingReference);
-        
+        var trainRepo = Substitute.For<ITrainRepository>();
+        Booking target = GetTarget(seatCountRequested, trainName, bookingReference, trainRepo);
+
         // ACT
         IEnumerable<string> actual = target.BookedSeats();
 
@@ -25,4 +31,6 @@ public class BookingTest
         Check.That(actual).HasSize(1);
         Check.That(actual.Single()).IsEqualTo("1A");
     }
+
+
 }

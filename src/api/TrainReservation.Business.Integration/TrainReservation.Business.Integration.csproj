@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,9 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
     <PackageReference Include="NFluent" Version="2.8.0" />
     <PackageReference Include="NSubstitute" Version="4.4.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -25,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TrainReservation.Business\TrainReservation.Business.csproj" />
+    <ProjectReference Include="..\TrainReservation.Dal\TrainReservation.Dal.csproj" />
   </ItemGroup>
 
 </Project>

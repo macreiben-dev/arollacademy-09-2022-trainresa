@@ -43,7 +43,6 @@ public class BookingTest
     }
 
     [Fact]
-
     public void Should_return_seat_when_two_seats_available()
     {
         // ARRANGE

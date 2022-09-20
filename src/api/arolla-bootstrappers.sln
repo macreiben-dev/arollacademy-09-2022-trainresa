@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainReservation.Business.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainReservation.Business.Tests", "TrainReservation.Business.Tests\TrainReservation.Business.Tests.csproj", "{C6134F0B-E176-4F5E-AC7A-E13F3ED3AAD1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainReservation.Business", "TrainReservation.Business\TrainReservation.Business.csproj", "{1255DF36-6E9F-4CD7-9507-553828A3A4B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{C6134F0B-E176-4F5E-AC7A-E13F3ED3AAD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6134F0B-E176-4F5E-AC7A-E13F3ED3AAD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6134F0B-E176-4F5E-AC7A-E13F3ED3AAD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1255DF36-6E9F-4CD7-9507-553828A3A4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1255DF36-6E9F-4CD7-9507-553828A3A4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1255DF36-6E9F-4CD7-9507-553828A3A4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1255DF36-6E9F-4CD7-9507-553828A3A4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,10 +17,20 @@
 
         public IEnumerable<string> BookedSeats()
         {
-            return new[] { trainRepo.Get(trainName).First() };
+            IEnumerable<string> availableSeats = trainRepo.Get(trainName);
+
+            if (seatCountRequested == 1 && availableSeats.Count() == 1)
+                return new[] { availableSeats.First() };
+
+            if (AvailableSeatsEqualRequestedSeats(availableSeats))
+                return Enumerable.Empty<string>();
+
+            return new[] { availableSeats.First() };
         }
 
-
-
+        private bool AvailableSeatsEqualRequestedSeats(IEnumerable<string> availableSeats)
+        {
+            return seatCountRequested == availableSeats.Count();
+        }
     }
 }

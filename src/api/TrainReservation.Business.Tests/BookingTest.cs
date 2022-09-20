@@ -60,5 +60,21 @@ public class BookingTest
         Check.That(actual.Single()).IsEqualTo("1A");
     }
 
+    [Fact]
+
+    public void Should_return_empty_when_booking_the_whole_train_with_one_coach()
+    {
+        // ARRANGE
+        var seatCountRequested = 2;
+
+        trainRepo.Get(trainName).Returns(new[] { "1A", "2A" });
+        Booking target = GetTarget(seatCountRequested, trainName, bookingReference, trainRepo);
+
+        // ACT
+        IEnumerable<string> actual = target.BookedSeats();
+
+        // ASSERT
+        Check.That(actual).IsEmpty();
+    }
 
 }

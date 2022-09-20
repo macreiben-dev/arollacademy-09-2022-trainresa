@@ -1,0 +1,19 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AutoEnable>True</AutoEnable>
+    <CurrentEngineMode>Run all tests automatically [Global]</CurrentEngineMode>
+    <TestsWindowSplitterDistance>50%</TestsWindowSplitterDistance>
+    <TestsWindowTreeLayout>
+      <Column>
+        <Name>Name</Name>
+        <Width>600</Width>
+      </Column>
+    </TestsWindowTreeLayout>
+    <TestsWindowTreeSortOrder>
+      <Sort>
+        <Name>Name</Name>
+        <Order>Descending</Order>
+      </Sort>
+    </TestsWindowTreeSortOrder>
+  </Settings>
+</SolutionConfiguration>

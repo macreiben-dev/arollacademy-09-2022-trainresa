@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arolla.WebApis", "Arolla.WebApis\Arolla.WebApis.csproj", "{9F20100F-2BB8-4AF2-B9BD-0D577E86A61C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{23C4A779-EED7-4FE0-A03F-5128827C90FA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlProject", "SqlProject\SqlProject.sqlproj", "{43DD854A-24F4-4330-8E20-96D85158C43A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.DapperSamples", "Repositories.DapperSamples\Repositories.DapperSamples.csproj", "{1175C634-EDD6-439C-9038-B7327A55DE21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories.DapperSamples.Acceptance.Tests", "Repositories.DapperSamples.Acceptance.Tests\Repositories.DapperSamples.Acceptance.Tests.csproj", "{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F20100F-2BB8-4AF2-B9BD-0D577E86A61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F20100F-2BB8-4AF2-B9BD-0D577E86A61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F20100F-2BB8-4AF2-B9BD-0D577E86A61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F20100F-2BB8-4AF2-B9BD-0D577E86A61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DD854A-24F4-4330-8E20-96D85158C43A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1175C634-EDD6-439C-9038-B7327A55DE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1175C634-EDD6-439C-9038-B7327A55DE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1175C634-EDD6-439C-9038-B7327A55DE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1175C634-EDD6-439C-9038-B7327A55DE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43DD854A-24F4-4330-8E20-96D85158C43A} = {23C4A779-EED7-4FE0-A03F-5128827C90FA}
+		{1175C634-EDD6-439C-9038-B7327A55DE21} = {23C4A779-EED7-4FE0-A03F-5128827C90FA}
+		{D3704139-B35B-4C0A-9E30-4C5075A1BC0E} = {23C4A779-EED7-4FE0-A03F-5128827C90FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ECE9F14-72E9-45B2-AACD-05BD4C48ECE7}
+	EndGlobalSection
+EndGlobal

@@ -1,6 +1,6 @@
 ﻿namespace TrainReservation.Business
 {
-    internal class Booking
+    public class Booking
     {
         private int seatCountRequested;
         private string trainName;
@@ -15,7 +15,7 @@
             this.trainRepo = trainRepo;
         }
 
-        internal IEnumerable<string> BookedSeats()
+        public IEnumerable<string> BookedSeats()
         {
             return trainRepo.Get(trainName);
         }
